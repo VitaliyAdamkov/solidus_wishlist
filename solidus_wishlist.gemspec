@@ -24,17 +24,19 @@ Gem::Specification.new do |s|
 
   s.add_dependency "solidus_core", [">= 1.2.0", "< 3"]
   s.add_dependency "solidus_support"
+  s.add_dependency "deface", '~> 1.0'
 
-  s.add_development_dependency 'factory_bot', '~> 4.4'
   s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'sqlite3', '~> 1.3.10'
+  s.add_development_dependency 'factory_bot', '~> 4.5'
+  s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'capybara', '~> 2.4'
-  s.add_development_dependency 'poltergeist', '~> 1.6.0'
+  s.add_development_dependency 'capybara-screenshot'
+  s.add_development_dependency 'poltergeist', '~> 1.5'
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'simplecov', '~> 0.9.0'
-  s.add_development_dependency 'shoulda-matchers', '~> 2.5'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'shoulda-matchers'
   s.add_development_dependency 'coffee-rails'
-  s.add_development_dependency 'sass-rails', '~> 5.0.0'
+  s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'rubocop'
