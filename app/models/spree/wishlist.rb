@@ -6,7 +6,7 @@ class Spree::Wishlist < ActiveRecord::Base
   validates :name, presence: true
 
   def include?(variant_id)
-    wished_products.map(&:variant_id).include? variant_id.to_i
+    wished_products.where(variant_id: variant_id.to_i).exists?
   end
 
   def to_param
